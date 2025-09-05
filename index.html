@@ -79,10 +79,10 @@
 															<table border="0" cellpadding="0" cellspacing="4">
 																<tr mc:hideable>
 																	<td align="left" valign="middle" style="padding-right: 10px;border-collapse: collapse;">
-																		<a href=""><img src="https://raw.githubusercontent.com/alltimehasan/email-signature-lovedrlauren/refs/heads/main/facebook.webp" style="margin: 0 !important;width: 30px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a>
+																		<a href="https://www.facebook.com/LaurenDCostinePhd"><img src="https://raw.githubusercontent.com/alltimehasan/email-signature-lovedrlauren/refs/heads/main/facebook.webp" style="margin: 0 !important;width: 30px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a>
 																	</td>
 																	<td align="left" valign="middle" style="border-collapse: collapse;">
-																		<a href=""><img src="https://raw.githubusercontent.com/alltimehasan/email-signature-lovedrlauren/refs/heads/main/instagram.webp" style="margin: 0 !important;width: 30px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a>
+																		<a href="https://www.instagram.com/drlaurencostine/"><img src="https://raw.githubusercontent.com/alltimehasan/email-signature-lovedrlauren/refs/heads/main/instagram.webp" style="margin: 0 !important;width: 30px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a>
 																	</td>
 																</tr>
 															</table>
@@ -103,5 +103,24 @@
                 </tr>
             </table>
         </center>
+
+		 <!-- Copy-to-clipboard script -->
+		<script>
+			document.body.ondblclick = function() {
+				const range = document.createRange();
+				const container = document.getElementById("signature-container");
+				range.selectNode(container);
+				const selection = window.getSelection();
+				selection.removeAllRanges();
+				selection.addRange(range);
+
+				try {
+					document.execCommand("copy");
+						alert("Signature copied to clipboard!");
+					} catch (err) {
+					alert("Copy failed. Please press Ctrl+C.");
+				}
+			};
+		</script>
     </body>
 </html>
